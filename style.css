@@ -1,0 +1,79 @@
+:root {
+  --clr-primary: #ff69b4;
+  --clr-secondary: #1e1e1e;
+  --clr-light: #f5f5f5;
+  --clr-dark: #121212;
+  --clr-text-light: #ffffff;
+  --clr-text-dark: #333333;
+}
+
+/* Light & Dark Theme Variables */
+.light-theme {
+  --bg: var(--clr-light);
+  --text: var(--clr-text-dark);
+  --nav-bg: var(--clr-primary);
+  --card-bg: #ffffff;
+  --overlay-bg: rgba(0,0,0,0.5);
+}
+.dark-theme {
+  --bg: var(--clr-dark);
+  --text: var(--clr-text-light);
+  --nav-bg: #000000;
+  --card-bg: #1f1f1f;
+  --overlay-bg: rgba(0,0,0,0.7);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  padding-top: 70px;
+}
+.navbar {
+  background: var(--nav-bg) !important;
+}
+.section-title {
+  color: var(--clr-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#home {
+  position: relative;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2018/09/14/10/30/nature-3676692_1280.jpg') center/cover no-repeat;
+}
+#home .overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: var(--overlay-bg);
+}
+#home .profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--clr-primary);
+}
+.project-card {
+  background: var(--card-bg);
+  border: none;
+  transition: transform .3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+.timeline li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.timeline-date {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: var(--clr-primary);
+}
