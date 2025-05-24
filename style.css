@@ -22,6 +22,13 @@
   --card-bg: #1f1f1f;
   --overlay-bg: rgba(0,0,0,0.7);
 }
+.project-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* or any desired height */
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 body {
   background: var(--bg);
