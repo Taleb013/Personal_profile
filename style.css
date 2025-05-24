@@ -57,14 +57,27 @@ body {
 
 /* Skills Section Styling */
 #skills {
-  background-color: purple;
-  color: white;
+  background-color: var(--clr-light);
+  color: var(--clr-text-dark);
 }
 #skills .skill-icon {
   width: 64px;
-  filter: brightness(0) invert(1);
   transition: transform .3s;
 }
 #skills .skill-icon:hover {
   transform: scale(1.1);
+}
+
+/* Resume Section Styling */
+#resume {
+  background-color: var(--clr-primary);
+  color: var(--clr-text-light);
+}
+#resume .btn-primary {
+  background-color: var(--clr-secondary);
+  border-color: var(--clr-secondary);
+}
+#resume .btn-primary:hover {
+  background-color: var(--clr-dark);
+  border-color: var(--clr-dark);
 }
