@@ -17,3 +17,11 @@ toggleBtn.addEventListener('click', () => {
   const newTheme = root.classList.contains('light-theme') ? 'dark' : 'light';
   setTheme(newTheme);
 });
+
+// Log skill link clicks
+const skillLinks = document.querySelectorAll('#skills .skill-link');
+skillLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    console.log(`Navigating to ${link.href}`);
+  });
+});
