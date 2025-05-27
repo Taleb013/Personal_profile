@@ -4,13 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>App Development</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <h1>App Development</h1>
-    <p>Full-stack, mobile, and modern app design & development techniques.</p>
-  </div>
-  <script src="script.js"></script>
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="light-theme">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Md Abu Taleb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#learn">Back</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="py-5 text-center text-white" style="background: var(--clr-primary);">
+    <div class="container" data-aos="fade-down">
+      <h1 class="display-4">App Development</h1>
+      <p class="lead">End-to-end software engineering: design, build, test, and deploy scalable applications.</p>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+  <main class="py-5">
+    <div class="container">
+      <!-- SDLC Overview -->
+      <section id="sdlc" class="mb-5" data-aos="fade-up">
+        <h2 class="section-title">Software Development Life Cycle (SDLC)</h2>
+        <ol>
+          <li><strong>Requirements Gathering:</strong> Stakeholder interviews, user stories, and specification documents.</li>
+          <li><strong>Design:</strong> Architecture diagrams, UI/UX wireframes, and technology stack selection.</li>
+          <li><strong>Implementation:</strong> Agile sprints, version control (Git), and coding standards.</li>
+          <li><strong>Testing:</strong> Unit, integration, end-to-end tests, and continuous integration pipelines.</li>
+          <li><strong>Deployment:</strong> Containerization (Docker), orchestration (Kubernetes), and CI/CD tools.</li>
+          <li><strong>Maintenance:</strong> Monitoring (Prometheus), logging (ELK), and iterative improvements.</li>
+        </ol>
+      </section>
+
+      <!-- Tools & Frameworks -->
+      <section id="tools" class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">Key Tools & Frameworks</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Frontend</h5>
+                <p class="card-text">React, Vue.js, Bootstrap, Tailwind CSS for responsive UI development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Backend</h5>
+                <p class="card-text">Node.js, Django/Flask, Spring Boot with RESTful API design and GraphQL.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Mobile</h5>
+                <p class="card-text">Flutter, React Native for cross-platform apps; Swift & Kotlin for native development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Practices -->
+      <section id="best-practices" class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-title">Best Practices & Patterns</h2>
+        <ul>
+          <li><strong>Design Patterns:</strong> MVC, MVVM, Repository, and Dependency Injection.</li>
+          <li><strong>Code Quality:</strong> Linting (ESLint, Pylint), code reviews, and pair programming.</li>
+          <li><strong>Security:</strong> OWASP Top 10, JWT/OAuth2, encryption at rest and in transit.</li>
+          <li><strong>Scalability:</strong> Microservices, load balancing, caching strategies (Redis).</li>
+        </ul>
+      </section>
+
+      <!-- CI/CD & DevOps -->
+      <section id="ci-cd" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="section-title">CI/CD & DevOps</h2>
+        <p>Automate builds, run tests, and deploy to staging/production with GitHub Actions, Jenkins, or GitLab CI.</p>
+        <ul class="list-group">
+          <li class="list-group-item">Automated testing pipelines</li>
+          <li class="list-group-item">Container builds and registry workflows</li>
+          <li class="list-group-item">Blue/Green and Canary deployments</li>
+        </ul>
+      </section>
+
+      <!-- Case Studies & Examples -->
+      <section id="case-studies" class="mb-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-title">Case Studies</h2>
+        <div class="accordion" id="cases">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="caseOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                E-Commerce Platform
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#cases">
+              <div class="accordion-body">
+                <p>A microservices-based e-commerce app using React, Node.js, and Kubernetes that scaled to 10k+ daily users.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="caseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Chat & Collaboration App
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#cases">
+              <div class="accordion-body">
+                <p>Real-time chat and video calls built with WebSockets, React Native, and Django Channels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources & Further Reading -->
+      <section id="resources" class="mb-5" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="section-title">Resources & Further Reading</h2>
+        <ul>
+          <li><a href="https://12factor.net/" target="_blank">The Twelve-Factor App</a></li>
+          <li><a href="https://martinfowler.com/books/refactoring.html" target="_blank">Refactoring by Martin Fowler</a></li>
+          <li><a href="https://docs.docker.com/" target="_blank">Docker Documentation</a></li>
+          <li><a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Docs</a></li>
+        </ul>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="cta" class="text-center" data-aos="fade-up" data-aos-delay="600">
+        <a href="mailto:2002mdabutaleb@gmail.com" class="btn btn-lg btn-secondary">Start Your Project</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Bootstrap & AOS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
