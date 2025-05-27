@@ -36,6 +36,16 @@ body {
   scroll-behavior: smooth;
   padding-top: 70px;
 }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
 .navbar {
   background: var(--nav-bg) !important;
 }
