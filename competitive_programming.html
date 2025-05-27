@@ -4,13 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Competitive Programming</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <h1>Competitive Programming</h1>
-    <p>Explore problems, tips, and platforms like Codeforces, AtCoder, and LeetCode.</p>
-  </div>
-  <script src="script.js"></script>
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="light-theme">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Md Abu Taleb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#learn">Back</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="py-5 text-center text-white" style="background: var(--clr-primary);">
+    <div class="container" data-aos="fade-down">
+      <h1 class="display-4">Competitive Programming</h1>
+      <p class="lead">Your roadmap to Codeforces Grandmaster: mindset, practice, and resources.</p>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Mindset & Motivation -->
+      <section id="mindset" class="mb-5" data-aos="fade-up">
+        <h2 class="section-title">Mindset & Motivation</h2>
+        <p>Achieving Grandmaster requires resilience, curiosity, and consistent effort. Embrace failures as learning opportunities, set daily goals, and track progress in a journal.</p>
+      </section>
+
+      <!-- Learning Path -->
+      <section id="path" class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">Structured Learning Path</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Fundamentals:</strong> Data structures (arrays, trees, graphs), algorithms (sorting, searching).</li>
+          <li class="list-group-item"><strong>Intermediate:</strong> Greedy, DP, DSU, segment trees, two pointers.</li>
+          <li class="list-group-item"><strong>Advanced:</strong> Flows, FFT, advanced geometry, string algorithms.</li>
+          <li class="list-group-item"><strong>Expert:</strong> Custom data structures, game theory, probabilistic methods.</li>
+        </ul>
+      </section>
+
+      <!-- Platforms & Tools -->
+      <section id="platforms" class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-title">Platforms & Tools</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Codeforces</h5>
+                <p class="card-text">Contests, community blogs, and virtual participation. Track your rating and analyze problems by tag.</p>
+                <a href="https://codeforces.com" target="_blank" class="btn btn-outline-light btn-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">LeetCode</h5>
+                <p class="card-text">Practice 200+ problems, contests, and company-specific sets. Great for coding interview prep.</p>
+                <a href="https://leetcode.com" target="_blank" class="btn btn-outline-light btn-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">AtCoder</h5>
+                <p class="card-text">Regular Japanese contests with high-quality problems. Use for speed and accuracy training.</p>
+                <a href="https://atcoder.jp" target="_blank" class="btn btn-outline-light btn-sm">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practice Schedule -->
+      <section id="schedule" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="section-title">Weekly Practice Schedule</h2>
+        <ol>
+          <li>Mon: Solve 2 <em>easy</em> + 1 <em>medium</em> problem.</li>
+          <li>Wed: Participate in a virtual contest (CF/AtCoder).</li>
+          <li>Fri: Tackle 1 <em>hard</em> problem and review editorials.</li>
+          <li>Sun: Code review and implement data structures in C++/Python.</li>
+        </ol>
+      </section>
+
+      <!-- Community & Resources -->
+      <section id="resources" class="mb-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-title">Community & Resources</h2>
+        <ul>
+          <li><a href="https://github.com/errichto/youtube" target="_blank">Errichto’s YouTube playlist</a></li>
+          <li><a href="https://cses.fi" target="_blank">CSES Problem Set</a></li>
+          <li><a href="https://codeforces.com/blog/entry/58816" target="_blank">CF Tag Tutorials</a></li>
+          <li><a href="https://usaco.guide" target="_blank">USACO Guide</a></li>
+        </ul>
+      </section>
+
+      <!-- Motivational Quotes -->
+      <section id="quotes" class="mb-5 text-center" data-aos="fade-up" data-aos-delay="500">
+        <blockquote class="blockquote">
+          <p>“The expert in anything was once a beginner.”</p>
+          <footer class="blockquote-footer">Helen Hayes</footer>
+        </blockquote>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="cta" class="text-center" data-aos="fade-up" data-aos-delay="600">
+        <a href="mailto:2002mdabutaleb@gmail.com" class="btn btn-lg btn-secondary">Join My Study Group</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Bootstrap & AOS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
