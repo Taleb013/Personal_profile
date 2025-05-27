@@ -4,13 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Prompt Writing</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <h1>AI Prompt Writing</h1>
-    <p>Effective prompts for ChatGPT, Midjourney, and other AI tools.</p>
-  </div>
-  <script src="script.js"></script>
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" class="light-theme">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Md Abu Taleb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#learn">Back</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="py-5 text-center text-white" style="background: var(--clr-primary);">
+    <div class="container" data-aos="fade-down">
+      <h1 class="display-4">AI Prompt Writing</h1>
+      <p class="lead">Master crafting prompts for ChatGPT, Midjourney, and beyond.</p>
+    </div>
+  </header>
+
+  <!-- Content Sections -->
+  <main class="py-5">
+    <div class="container">
+      <!-- Introduction -->
+      <section id="intro" class="mb-5" data-aos="fade-up">
+        <h2 class="section-title">Why Prompt Writing Matters</h2>
+        <p>Effective prompts are the key to unlocking the full potential of AI tools. Whether you're generating text with ChatGPT, images with Midjourney, or code with Copilot, a well-structured prompt guides the model to deliver accurate, creative, and relevant outputs.</p>
+      </section>
+
+      <!-- Prompt Structure -->
+      <section id="structure" class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">Anatomy of a Great Prompt</h2>
+        <ul>
+          <li><strong>Context:</strong> Provide background or scenario.</li>
+          <li><strong>Instruction:</strong> Clearly state the task.</li>
+          <li><strong>Constraints:</strong> Specify style, length, format.</li>
+          <li><strong>Examples:</strong> Show examples or templates.</li>
+        </ul>
+      </section>
+
+      <!-- Examples -->
+      <section id="examples" class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="section-title">Prompt Templates & Examples</h2>
+        <div class="accordion" id="promptExamples">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                ChatGPT: Creative Storytelling
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#promptExamples">
+              <div class="accordion-body">
+                <code>"Write a 300-word short story in the style of Edgar Allan Poe about a haunted lighthouse. Include vivid sensory details and a twist ending."</code>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Midjourney: Fantasy Illustration
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#promptExamples">
+              <div class="accordion-body">
+                <code>"/imagine A majestic dragon soaring over snowy mountains at sunrise, ultra-detailed, cinematic lighting, 4K, artstation."</code>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Copilot: Code Refactoring
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#promptExamples">
+              <div class="accordion-body">
+                <code>"Refactor the following Python function to improve readability and performance. Add type hints and docstrings."</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Tips -->
+      <section id="advanced" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="section-title">Advanced Techniques</h2>
+        <ol>
+          <li><strong>Chain of Thought:</strong> Ask the model to think step-by-step.</li>
+          <li><strong>Role Play:</strong> Assign a role (e.g., "You are an expert chef").</li>
+          <li><strong>Few-shot Learning:</strong> Provide 2–3 examples before the task.</li>
+          <li><strong>Parameter Tuning:</strong> Experiment with temperature, max tokens.</li>
+        </ol>
+      </section>
+
+      <!-- Resources -->
+      <section id="resources" class="mb-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-title">Further Reading & Tools</h2>
+        <ul>
+          <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">OpenAI Prompt Engineering Guide</a></li>
+          <li><a href="https://docs.midjourney.com/docs/prompts" target="_blank">Midjourney Prompt Reference</a></li>
+          <li><a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank">Awesome ChatGPT Prompts</a></li>
+        </ul>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="cta" class="text-center" data-aos="fade-up" data-aos-delay="500">
+        <a href="mailto:2002mdabutaleb@gmail.com" class="btn btn-lg btn-secondary">Get Prompt Feedback</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Bootstrap & AOS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
