@@ -1,17 +1,22 @@
 // Theme toggle and persistence
 const toggleBtn = document.getElementById('theme-toggle');
 const root = document.body;
+
 function setTheme(theme) {
-  root.classList.remove('light-theme','dark-theme');
+  root.classList.remove('light-theme', 'dark-theme');
   root.classList.add(`${theme}-theme`);
   toggleBtn.textContent = theme === 'light' ? '🌙' : '☀️';
   localStorage.setItem('theme', theme);
+  console.log(`Theme set to: ${theme}`);
 }
+
 const savedTheme = localStorage.getItem('theme') || 'dark';
 setTheme(savedTheme);
+
 toggleBtn.addEventListener('click', () => {
   const newTheme = root.classList.contains('light-theme') ? 'dark' : 'light';
   setTheme(newTheme);
+  console.log(`Theme toggled to: ${newTheme}`);
 });
 
 // Optional: log clicks on skill icons
