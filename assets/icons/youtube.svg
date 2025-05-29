@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Icon</title>
+</head>
 <body>
-  <!-- Directly insert the SVG -->
+  <!-- YouTube SVG Icon -->
   <svg width="100" height="70" viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg">
     <rect width="100" height="70" rx="15" fill="#FF0000"/>
     <polygon points="40,20 70,35 40,50" fill="#ffffff"/>
   </svg>
 </body>
+</html>
